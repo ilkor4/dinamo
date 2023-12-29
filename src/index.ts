@@ -1,5 +1,5 @@
 function component(arg: number ): string {
-    console.log('JNJjn')
+    console.log('Jjn')
 
     return 'element';
 }
