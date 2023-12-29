@@ -1,7 +1,8 @@
 import {render} from "react-dom";
 import {Button} from "./components/Button/Button";
+import {App} from "./App";
 
 render(
-    <Button />,
+    <App />,
     document.getElementById('root')
 )
