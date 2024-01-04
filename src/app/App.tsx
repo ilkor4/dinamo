@@ -6,6 +6,7 @@ import {classNames} from "helpers/classNames/classNames";
 import {useTheme} from "app/providers/ThemeProvider";
 import {AboutPage} from "pages/AboutPage";
 import {MainPage} from "pages/MainPage";
+import {RouteConfig} from "shared/config/routeConfig/routeConfig";
 
 export const App = () => {
     const {theme, toggleTheme} = useTheme();
@@ -15,8 +16,15 @@ export const App = () => {
             <button onClick={toggleTheme}>Меняем тему</button>
             <Suspense fallback={<div>...Loading</div>}>
                 <Routes>
-                    <Route path={'/'} element={<MainPage />} />
-                    <Route path={'/about'} element={<AboutPage />} />
+                    {
+                        Object.values(RouteConfig)
+                            .map(({path, element}) => (
+                                <Route
+                                    key={path}
+                                    path={path}
+                                    element = {element}
+                                />
+                            ))}
                 </Routes>
             </Suspense>
             <Button />
