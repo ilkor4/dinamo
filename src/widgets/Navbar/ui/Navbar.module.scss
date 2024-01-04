@@ -1,0 +1,8 @@
+.Navbar {
+  margin: 0 auto; // убрать
+  width: 97%;
+  height: var(--navbar-height);
+  border-radius: 15px;
+  background-color: var(--inverted-bg-color);
+  opacity: .7;
+}
