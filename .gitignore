@@ -2,4 +2,4 @@
 node_modules
 .idea
 News
-logo.png
+src/shared/assets/images/logo.png
