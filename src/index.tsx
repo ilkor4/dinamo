@@ -1,13 +1,13 @@
 import {render} from "react-dom";
 import {App} from "./app/App";
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, HashRouter} from "react-router-dom";
 import ThemeProvider from "./app/providers/ThemeProvider/ui/ThemeProvider";
 
 render(
-    <BrowserRouter>
+    <HashRouter>
         <ThemeProvider>
             <App />
         </ThemeProvider>
-    </BrowserRouter>,
+    </HashRouter>,
     document.getElementById('root')
 )
