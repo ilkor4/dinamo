@@ -1,4 +1,3 @@
-import {Button} from "components/Button/Button";
 import './styles/index.scss';
 import {classNames} from "shared/lib/classNames/classNames";
 import {useTheme} from "app/providers/ThemeProvider";
@@ -11,7 +10,6 @@ export const App = () => {
     return (
         <div className={classNames('app', {}, [theme])}>
             <Navbar />
-            <Button />
             <AppRouter />
         </div>
     );

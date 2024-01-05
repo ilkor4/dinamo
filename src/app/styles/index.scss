@@ -1,4 +1,5 @@
 @import "reset";
+@import "fonts/fonts";
 @import "variables/global";
 @import "themes/normal";
 @import "themes/dark";
@@ -14,4 +15,16 @@
   color: var(--primary-color);
 
   min-height: 100vh;
+
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

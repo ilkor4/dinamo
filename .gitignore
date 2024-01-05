@@ -1,5 +1,13 @@
 /build
 node_modules
 .idea
+
+src/shared/assets/images
+icons
+utils
+fonts
+
+Timeline
 News
-src/shared/assets/images/logo.png
+Burger
+fonts

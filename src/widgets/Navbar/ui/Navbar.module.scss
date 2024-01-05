@@ -1,8 +1,19 @@
 .Navbar {
-  margin: 0 auto; // убрать
-  width: 97%;
-  height: var(--navbar-height);
+  width: 95%;
+  min-height: var(--navbar-height);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border-radius: 15px;
   background-color: var(--inverted-bg-color);
-  opacity: .7;
+}
+
+.ticket {
+  fill: var(--secondary-color)
+}
+
+.links {
+  display: flex;
+  gap: 10px;
 }

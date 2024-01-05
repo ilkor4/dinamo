@@ -9,3 +9,18 @@
   background: none;
   outline: none;
 }
+
+.news__button {
+  align-self: flex-start;
+  padding: 5px;
+  margin: 0;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 3;
+  background-color: var(--inverted-bg-color);
+  color: var(--secondary-color);
+  border-radius: 10px;
+  border: 1px solid var(--secondary-color);
+}
