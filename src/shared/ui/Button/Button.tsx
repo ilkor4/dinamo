@@ -4,7 +4,9 @@ import {ButtonHTMLAttributes, FC} from "react";
 
 export enum ThemeButton {
     CLEAR = 'clear',
-    NEWS = 'news__button'
+    NEWS = 'news__button',
+    MENU = 'menu__button',
+    GAME = 'game__button',
 }
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
     className?: string;
