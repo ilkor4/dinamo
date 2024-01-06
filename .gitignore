@@ -1,13 +1,2 @@
 node_modules
 .idea
-
-src/shared/assets/images
-icons
-utils
-fonts
-
-Timeline
-News
-Burger
-Game
-GameBar

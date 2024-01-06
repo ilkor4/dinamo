@@ -1,6 +1,6 @@
 import {render} from "react-dom";
 import {App} from "./app/App";
-import {BrowserRouter, HashRouter} from "react-router-dom";
+import {HashRouter} from "react-router-dom";
 import ThemeProvider from "./app/providers/ThemeProvider/ui/ThemeProvider";
 
 render(
