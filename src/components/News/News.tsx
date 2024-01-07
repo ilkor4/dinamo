@@ -1,6 +1,7 @@
 import cls from './News.module.scss'
 import BallIcon from 'shared/assets/icons/ball-icon.svg';
 import {Button, ThemeButton} from "shared/ui/Button/Button";
+import {textSliser} from "shared/lib/textSlicer/textSlicer";
 
 interface NewsProps {
     className?: string;
@@ -25,7 +26,7 @@ export const News = (props: NewsProps) => {
             style={{backgroundImage: `url(${newsImage})`}}
         >
             <p className={cls.description}>
-                {newsText}
+                {textSliser({text: newsText, number: 80})}
             </p>
             <Button
                 theme={ThemeButton.NEWS}

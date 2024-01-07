@@ -31,25 +31,26 @@
   width: 100%;
   height: 100%;
   content: '';
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
   filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.2));
 
 }
 
 .wideImage {
   aspect-ratio: 1.8/1;
+  z-index: 4;
 }
 
 .description {
-  height: 6rem;
+  //height: 6rem;
   overflow: hidden;
   text-overflow: ellipsis;
   font: var(--font-m);
   color: #e8e8ea;
   z-index: 2;
-  display: -webkit-box;
-  -webkit-line-clamp: 4; /* номер строки где указывается троеточие */
-  -webkit-box-orient: vertical;
+  //display: -webkit-box;
+  //-webkit-line-clamp: 4; /* номер строки где указывается троеточие */
+  //-webkit-box-orient: vertical;
 }
 
 .ballIcon {

@@ -31,7 +31,7 @@
 }
 
 .Gif {
-  width: 100%;
+  width: var(--game-width);
   display: flex;
   flex-direction: row-reverse;
 }
