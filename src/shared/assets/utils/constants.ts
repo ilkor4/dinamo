@@ -19,7 +19,7 @@ export const  newsArray = [
     },
     {
         newsImage: "https://sun9-76.userapi.com/impg/yhZPGrouRu8FO-6yy6x6_qnXCwHflQZkAFSMuw/6YcAA8_OQbo.jpg?size=2560x1707&quality=95&sign=5a340dcc403509c0e118b6a25e117efd&type=album",
-        newsText: "Максим Синельников: «Сделаем выводы и будем готовы к завтрашней игре». dd",
+        newsText: "Максим Синельников: «Сделаем выводы и будем готовы к завтрашней игре»",
     },
     {
         newsImage: "https://sun9-61.userapi.com/impg/cUq1WLzobhXxzZvaj4ygz3XOTru1NiupgMW89Q/91sts2X81vc.jpg?size=1280x720&quality=95&sign=6b86b496af69bdab19cfc9362bd92928&type=album",
@@ -34,7 +34,7 @@ export const  newsArray = [
     {
         newsImage: "https://sun9-22.userapi.com/impg/0pR_fx1ryeN87q76C_FTnBO6nswNdhHt2IbWRA/UeWM5AyFWNs.jpg?size=2179x1453&quality=95&sign=c1b767bba6e27361e32ee78a13291393&type=album",
         newsText: `Шикарный фотоотчет из Магнитки🏀
-            «Металлург» vs. «Динамо» , Грозный`,
+            «Металлург» vs «Динамо» Грозный`,
     },
     {
         newsImage: "https://sun9-2.userapi.com/impg/lf6Le87GGOPWaMpatN7QhFd8CKzP6teZDYNi4g/nzUFi_Vak9U.jpg?size=2560x1441&quality=95&sign=264771362bac4e3b2890594f0aeb43b8&type=album",

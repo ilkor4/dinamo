@@ -18,8 +18,8 @@ export const GameBar = ({className}: GameBarProps) => {
                                     score,
                                     firstTeamIcon,
                                     secondTeamIcon,
-                                }) => (
-                    <li>
+                                }, index) => (
+                    <li key ={index}>
                         <Game
                             title={title}
                             score={score}
