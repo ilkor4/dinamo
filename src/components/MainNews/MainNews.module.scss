@@ -1,0 +1,14 @@
+.MainNews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  z-index: 3;
+}
+
+.title {
+  text-align: center;
+  font: var(--font-l);
+  color: var(--primary-color);
+  font-weight: 700;
+}

@@ -19,7 +19,11 @@ export const ThemeSwitcher = ({className}: ThemeSwitcherProps) => {
         >
             {
                 theme === Theme.LIGHT
-                    ? <LightIcon />
+                    ? <img
+                    src={DarkIcon}
+                    className={cls.logo}
+                    alt={'Тёмный логотип баскетбольного Динамо г. Грозный'}
+                />
                     : <img
                         src={DarkIcon}
                         className={cls.logo}

@@ -43,3 +43,15 @@
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
 }
+
+.lead__button {
+  width: max-content;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--primary-color);
+  background-color: inherit;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+}

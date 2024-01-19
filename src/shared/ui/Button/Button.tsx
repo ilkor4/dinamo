@@ -7,6 +7,7 @@ export enum ThemeButton {
     NEWS = 'news__button',
     MENU = 'menu__button',
     GAME = 'game__button',
+    LEAD = 'lead__button'
 }
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
     className?: string;

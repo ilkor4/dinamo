@@ -1,10 +1,10 @@
 import {TimeLine} from "components/TimeLine/TimeLine";
-import {GameBar} from "widgets/GameBar";
+import {Lead} from "components/Lead/Lead";
 export default function MainPage() {
 
     return (
         <div className="main">
-            <GameBar />
+            <Lead />
             <TimeLine />
         </div>
     );

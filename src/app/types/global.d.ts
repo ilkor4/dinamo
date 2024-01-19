@@ -11,7 +11,8 @@ declare module '*.png';
 declare module '*.jpg';
 declare module '*.jpeg';
 declare module '*.woff';
-declare module '*.woff2'
+declare module '*.woff2';
+declare module '*.mp4';
 declare module '*.svg' {
     import React from 'react';
 
