@@ -5,33 +5,32 @@ import StatIcon from "shared/assets/icons/stat-icon.svg";
 
 interface GameProps {
     className?: string;
-    title: string;
-    score: string;
-    firstTeamIcon: string;
-    secondTeamIcon: string;
+    game: TeamGameData;
 }
 export const Game = (props: GameProps) => {
+    const { game, className} = props;
+
     const {
-        className,
-        title,
-        score,
-        firstTeamIcon,
-        secondTeamIcon
-    } = props;
+        DisplayDateTimeMsk,
+        TeamLogoA,
+        TeamLogoB,
+        ScoreA,
+        ScoreB
+    } = game;
     
     return (
         <div className={classNames(cls.Game, {}, [className])}>
-            <h3 className={cls.title}>{title}</h3>
+            <h3 className={cls.title}>{DisplayDateTimeMsk}</h3>
             <div className={cls.gameContainer}>
                 <div
-                    style={{backgroundImage: `url(${firstTeamIcon})`}}
+                    style={{backgroundImage: `url(${TeamLogoA})`}}
                     className={cls.firstTeamImage}
                 />
                 <div className={cls.score}>
-                    {score}
+                    {`${ScoreA} : ${ScoreB}` }
                 </div>
                 <div
-                    style={{backgroundImage: `url(${secondTeamIcon})`}}
+                    style={{backgroundImage: `url(${TeamLogoB})`}}
                     className={cls.secondTeamImage}
                 />
             </div>

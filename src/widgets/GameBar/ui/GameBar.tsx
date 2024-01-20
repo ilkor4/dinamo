@@ -1,30 +1,32 @@
 import {classNames} from "shared/lib/classNames/classNames";
 import cls from './GameBar.module.scss'
 import {Game} from "components/Game/Game";
-import {gameArray} from "shared/assets/utils/constants";
 import {Gif} from "components/Gif/Gif";
+import {GamesContext} from "app/providers/GamesProvider/lib/GamesContext";
+import {useContext, useEffect, useState} from "react";
+import {trimGames} from "shared/lib/trimGames/trimGames";
 
 interface GameBarProps {
     className?: string;
 }
 export const GameBar = ({className}: GameBarProps) => {
-    
+    const gamesArray = useContext(GamesContext);
+    const [renderGames, setRenderGames] = useState<TeamGameData[]>([]);
+
+    useEffect(() => {
+        if (gamesArray.length !== 0) {
+            setRenderGames(trimGames(gamesArray));
+        }
+    }, [gamesArray]);
+
     return (
         <section className={classNames(cls.GameBar, {}, [className])}>
             <Gif />
             <ul className={cls.widget}>
-                {gameArray.map(({
-                                    title,
-                                    score,
-                                    firstTeamIcon,
-                                    secondTeamIcon,
-                                }, index) => (
+                {renderGames.map((game, index) => (
                     <li key ={index}>
                         <Game
-                            title={title}
-                            score={score}
-                            firstTeamIcon={firstTeamIcon}
-                            secondTeamIcon={secondTeamIcon} />
+                            game = {game} />
                     </li>
                 ))}
             </ul>
