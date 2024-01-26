@@ -1,11 +1,3 @@
-import KhimkiIcon from '../icons/teamIcons/khimki-logo.png';
-import GroznyIcon from '../icons/teamIcons/groznyi-logo.png';
-import MaikopIcon from '../icons/teamIcons/maikop-lpgo.png';
-import ChebyIcon from '../icons/teamIcons/cheby-logo.png';
-import TobolskIcon from '../icons/teamIcons/tobolsk-logo.png';
-import MetallurgIcon from '../icons/teamIcons/mettalurg-logo.png';
-import SlonIcon from '../icons/teamIcons/slon-logo.png';
-import MoscowskiyIcon from '../icons/teamIcons/moscowskiy-logo.png';
 export const  newsArray = [
     {
         newsImage: "https://sun9-30.userapi.com/impg/D1Br8213S5JxZXD3PXYnCPVr3m4T2UL-Secl2A/8rwTuI9eneI.jpg?size=1620x2160&quality=95&sign=8c6e131d92f336fbcef5cfe23cf21f1c&type=album",
@@ -57,113 +49,18 @@ export const  newsArray = [
     },
 ]
 
-export const gameArray = [
-    {
-        title: "Вт, 16 янв. 19:00 мск",
-        firstTeamIcon: SlonIcon,
-        secondTeamIcon: GroznyIcon,
-        score: " 0 : 0 "
-    },
-    {
-        title: "Пт, 22 дек. 17:00 мск",
-        firstTeamIcon: GroznyIcon,
-        secondTeamIcon: KhimkiIcon,
-        score: " 72 : 46 "
-    },
-    {
-        title: "Чт, 21 дек. 17:00 мск",
-        firstTeamIcon: GroznyIcon,
-        secondTeamIcon: KhimkiIcon,
-        score: " 69 : 72 "
-    },
-    {
-        title: "Вс, 10 дек. 17:00 (15:00 мск)",
-        firstTeamIcon: MetallurgIcon,
-        secondTeamIcon: GroznyIcon,
-        score: " 79 : 76 "
-    },
-    {
-        title: "Сб, 09 дек. 17:00 (15:00 мск)",
-        firstTeamIcon: MetallurgIcon,
-        secondTeamIcon: GroznyIcon,
-        score: " 72 : 76 "
-    },
-    {
-        title: "Вт, 05 дек. 19:00 (17:00 мск)",
-        firstTeamIcon: TobolskIcon,
-        secondTeamIcon: GroznyIcon,
-        score: " 68 : 96 "
-    },
-    {
-        title: "Пн, 04 дек. 19:00 (17:00 мск)",
-        firstTeamIcon: TobolskIcon,
-        secondTeamIcon: GroznyIcon,
-        score: " 64 : 68 "
-    },
-    {
-        title: "Чт, 24 ноя. 17:30 мск",
-        firstTeamIcon: KhimkiIcon,
-        secondTeamIcon: GroznyIcon,
-        score: " 83 : 65 "
-    },
-    {
-        title: "Чт, 23 ноя. 17:30 мск",
-        firstTeamIcon: KhimkiIcon,
-        secondTeamIcon: GroznyIcon,
-        score: " 69 : 62 "
-    },
-    {
-        title: "Вс, 12 ноя. 16:00 мск",
-        firstTeamIcon: GroznyIcon,
-        secondTeamIcon: MaikopIcon,
-        score: " 73 : 67 "
-    },
-    {
-        title: "Сб, 11 ноя. 16:00 мск",
-        firstTeamIcon: GroznyIcon,
-        secondTeamIcon: MaikopIcon,
-        score: " 76 : 68 "
-    },
-    {
-        title: "Ср, 08 ноя. 16:00 мск",
-        firstTeamIcon: GroznyIcon,
-        secondTeamIcon: SlonIcon,
-        score: " 96 : 72 "
-    },
-    {
-        title: "Вт, 07 ноя. 16:00 мск",
-        firstTeamIcon: GroznyIcon,
-        secondTeamIcon: SlonIcon,
-        score: " 76 : 73 "
-    },
-    {
-        title: "Вс, 22 окт. 14:00 мск",
-        firstTeamIcon: ChebyIcon,
-        secondTeamIcon: GroznyIcon,
-        score: " 72 : 61 "
-    },
-    {
-        title: "Сб, 21 окт. 14:00 мск",
-        firstTeamIcon: ChebyIcon,
-        secondTeamIcon: GroznyIcon,
-        score: " 64 : 60 "
-    },
-    {
-        title: "Сб, 23 сен. 19:30 мск",
-        firstTeamIcon: GroznyIcon,
-        secondTeamIcon: MoscowskiyIcon,
-        score: " 72 : 84 "
-    },
-    {
-        title: "Пт, 22 сен. 19:30 мск",
-        firstTeamIcon: GroznyIcon,
-        secondTeamIcon: SlonIcon,
-        score: " 83 : 56 "
-    },
-    {
-        title: " Чт, 21 сен. 19:30 мск",
-        firstTeamIcon: MaikopIcon,
-        secondTeamIcon: GroznyIcon,
-        score: " 61 : 89 "
-    },
-]
+export const playersNumbersList: {[index: number] : string}= {
+    59388: '16',
+    264683: '33',
+    15825: '12',
+    80767: '7',
+    47043: '71',
+    40562: '55',
+    28870: '00',
+    337818: '17',
+    153196: '43',
+    48419: '69',
+    37818: '13',
+    295644: '87',
+    15723: '36',
+}
