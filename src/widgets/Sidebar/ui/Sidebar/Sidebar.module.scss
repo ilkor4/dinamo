@@ -1,0 +1,15 @@
+.Sidebar {
+  width: var(--sidebar-width);
+  height: 100vh;
+  background-color: var(--inverted-bg-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  transition: .8s ease;
+  overflow: hidden;
+
+  &_collapsed {
+    width: var(--sidebar-width-collapsed);
+  }
+}

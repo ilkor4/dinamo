@@ -23,6 +23,17 @@
   position: relative;
 }
 
+.content-page {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.page-wrapper {
+  flex-grow: 1;
+}
+
+
 .main {
   width: 100%;
   display: flex;
