@@ -1,14 +1,15 @@
-import {classNames} from "shared/lib/classNames/classNames";
-import cls from './Game.module.scss';
-import {Button, ThemeButton} from "shared/ui/Button/Button";
-import StatIcon from "shared/assets/icons/stat-icon.svg";
+import { classNames } from 'shared/lib/classNames/classNames'
+import cls from './Game.module.scss'
+import { Button, ThemeButton } from 'shared/ui/Button/Button'
+import StatIcon from 'shared/assets/icons/stat-icon.svg'
+import { type FC } from 'react'
 
 interface GameProps {
-    className?: string;
-    game: TeamGameData;
+    className?: string
+    game: TeamGameData
 }
-export const Game = (props: GameProps) => {
-    const { game, className} = props;
+export const Game: FC<GameProps> = (props) => {
+    const { game, className } = props
 
     const {
         DisplayDateTimeMsk,
@@ -16,21 +17,21 @@ export const Game = (props: GameProps) => {
         TeamLogoB,
         ScoreA,
         ScoreB
-    } = game;
-    
+    } = game
+
     return (
-        <div className={classNames(cls.Game, {}, [className])}>
+        <div className={classNames(cls.Game, {}, [className ?? ''])}>
             <h3 className={cls.title}>{DisplayDateTimeMsk}</h3>
             <div className={cls.gameContainer}>
                 <div
-                    style={{backgroundImage: `url(${TeamLogoA})`}}
+                    style={{ backgroundImage: `url(${TeamLogoA})` }}
                     className={cls.firstTeamImage}
                 />
                 <div className={cls.score}>
                     {`${ScoreA} : ${ScoreB}` }
                 </div>
                 <div
-                    style={{backgroundImage: `url(${TeamLogoB})`}}
+                    style={{ backgroundImage: `url(${TeamLogoB})` }}
                     className={cls.secondTeamImage}
                 />
             </div>
@@ -38,8 +39,8 @@ export const Game = (props: GameProps) => {
                 theme={ThemeButton.GAME}
             >
                 <StatIcon className={cls.statIcon}/>
-                Полная статистика матча
+              Полная статистика матча
             </Button>
         </div>
-    );
-};
+    )
+}

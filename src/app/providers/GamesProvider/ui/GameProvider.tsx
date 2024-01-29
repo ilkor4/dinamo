@@ -1,12 +1,11 @@
-import {FC, ReactNode, useCallback, useEffect, useState} from "react";
-import {mainApi} from "features/MainApi/MainApi";
-import {GamesContext} from "../lib/GamesContext";
-
+import { type FC, type ReactNode, useCallback, useEffect, useState } from 'react'
+import { mainApi } from 'features/MainApi/MainApi'
+import { GamesContext } from '../lib/GamesContext'
 
 interface GameProviderProps {
-    children: ReactNode;
+    children: ReactNode
 }
-export const GameProvider :FC<GameProviderProps> = ({children})  => {
+export const GameProvider: FC<GameProviderProps> = ({ children }) => {
     const [games, setGames] = useState<TeamGameData[]>([])
 
     const fetchGames = useCallback(async () => {
@@ -15,13 +14,13 @@ export const GameProvider :FC<GameProviderProps> = ({children})  => {
 
     useEffect(() => {
         fetchGames()
-            .then((games) => setGames(games))
-            .catch((err) => console.log(err));
-    }, [fetchGames]);
+            .then((games) => { setGames(games) })
+            .catch((err) => { console.log(err) })
+    }, [fetchGames])
 
     return (
         <GamesContext.Provider value={games}>
             {children}
         </GamesContext.Provider>
-    );
-};
+    )
+}

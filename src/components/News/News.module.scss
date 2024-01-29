@@ -47,15 +47,16 @@
 }
 
 .description {
-  //height: 6rem;
+  // height: 6rem;
   overflow: hidden;
   text-overflow: ellipsis;
   font: var(--font-m);
   color: var(--secondary-color);
   z-index: 2;
-  //display: -webkit-box;
-  //-webkit-line-clamp: 4; /* номер строки где указывается троеточие */
-  //-webkit-box-orient: vertical;
+
+  // display: -webkit-box;
+  // -webkit-line-clamp: 4; /* номер строки где указывается троеточие */
+  // -webkit-box-orient: vertical;
 }
 
 .ballIcon {

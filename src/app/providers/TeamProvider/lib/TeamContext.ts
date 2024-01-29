@@ -1,3 +1,3 @@
-import {createContext} from "react";
+import { createContext } from 'react'
 
-export const TeamContext = createContext<TeamRoasterData | null>(null);
+export const TeamContext = createContext<TeamRoasterData | null>(null)

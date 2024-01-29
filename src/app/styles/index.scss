@@ -5,17 +5,14 @@
 @import "themes/dark";
 
 * {
-  //background: red;
+  // background: red;
 }
 
 .app {
   font: var(--font-m);
-
   background: var(--bg-color);
   color: var(--primary-color);
-
   min-height: 100vh;
-
   display: flex;
   flex-direction: column;
   align-items: center;

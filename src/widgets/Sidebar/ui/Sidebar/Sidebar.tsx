@@ -1,27 +1,27 @@
-import {classNames} from "shared/lib/classNames/classNames";
+import { classNames } from 'shared/lib/classNames/classNames'
 import cls from './Sidebar.module.scss'
-import {Button} from "shared/ui/Button/Button";
-import {useContext, useState} from "react";
-import {SidebarContext} from "app/providers/SidebarProvider/lib/SidebarContext";
+import { Button, ThemeButton } from 'shared/ui/Button/Button'
+import { type FC, useContext } from 'react'
+import { SidebarContext } from 'app/providers/SidebarProvider/lib/SidebarContext'
 
 interface SidebarProps {
-    className?: string;
+    className?: string
 }
-export const Sidebar = ({className}: SidebarProps) => {
-    const {collapsed, setCollapsed}  = useContext(SidebarContext);
+export const Sidebar: FC<SidebarProps> = ({ className }) => {
+    const { collapsed, setCollapsed } = useContext(SidebarContext)
 
-    const onClose = () => {
-        setCollapsed(true);
+    const onClose = (): void => {
+        setCollapsed?.(true)
     }
 
     return (
-        <div className={classNames(cls.Sidebar, {[cls.Sidebar_collapsed]: collapsed}, [className])}>
+        <div className={classNames(cls.Sidebar, { [cls.Sidebar_collapsed]: collapsed ?? '' }, [className ?? ''])}>
             <Button
                 onClick={onClose}
-            >
-                Закрыть меню
+                theme={ThemeButton.CLEAR}>
+              Закрыть меню
             </Button>
 
         </div>
-    );
-};
+    )
+}
