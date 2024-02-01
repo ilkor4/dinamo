@@ -23,6 +23,7 @@ module.exports = {
         "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".tsx"] }],
         "@typescript-eslint/strict-boolean-expressions": "warn",
         "@typescript-eslint/no-non-null-assertion": "off",
+        "max-len": ["error", {"code": 100, "ignoreComments": true}]
     },
     "globals": {
         '__IS_DEV__': true,

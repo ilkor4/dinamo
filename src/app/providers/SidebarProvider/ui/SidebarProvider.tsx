@@ -1,5 +1,7 @@
 import { type FC, type ReactNode, useMemo, useState } from 'react'
-import { SidebarContext } from 'app/providers/SidebarProvider/lib/SidebarContext'
+import {
+    SidebarContext
+} from 'app/providers/SidebarProvider/lib/SidebarContext'
 
 interface Props {
     children: ReactNode

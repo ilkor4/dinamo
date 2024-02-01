@@ -1,4 +1,10 @@
-import { type FC, type ReactNode, useCallback, useEffect, useState } from 'react'
+import {
+    type FC,
+    type ReactNode,
+    useCallback,
+    useEffect,
+    useState
+} from 'react'
 import { mainApi } from 'features/MainApi/MainApi'
 import { GamesContext } from '../lib/GamesContext'
 

@@ -15,7 +15,9 @@ export const Sidebar: FC<SidebarProps> = ({ className }) => {
     }
 
     return (
-        <div className={classNames(cls.Sidebar, { [cls.Sidebar_collapsed]: collapsed ?? '' }, [className ?? ''])}>
+        <div className={
+            classNames(cls.Sidebar, { [cls.Sidebar_collapsed]: collapsed ?? '' }, [className ?? ''])
+        }>
             <Button
                 onClick={onClose}
                 theme={ThemeButton.CLEAR}>
