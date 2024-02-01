@@ -1,0 +1,14 @@
+.PageError {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  background-color: var(--bg-color);
+
+  &__text {
+    font: var(--font-l);
+    color: var(--inverted-bg-color);
+  }
+}
