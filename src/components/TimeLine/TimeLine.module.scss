@@ -1,11 +1,23 @@
 .TimeLine {
   width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
+  gap: 50px;
+
+  &__list {
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__item {
+    max-width: 360px; // Костыль
+    width: 100%;
+  }
 }

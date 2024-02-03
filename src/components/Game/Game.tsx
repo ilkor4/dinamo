@@ -3,6 +3,7 @@ import cls from './Game.module.scss'
 import { Button, ThemeButton } from 'shared/ui/Button/Button'
 import StatIcon from 'shared/assets/icons/stat-icon.svg'
 import { type FC } from 'react'
+import { type TeamGameData } from 'features/MainApi/types/TeamGamesData'
 
 interface GameProps {
     className?: string
@@ -20,27 +21,27 @@ export const Game: FC<GameProps> = (props) => {
     } = game
 
     return (
-        <div className={classNames(cls.Game, {}, [className ?? ''])}>
-            <h3 className={cls.title}>{DisplayDateTimeMsk}</h3>
-            <div className={cls.gameContainer}>
+        <article className={classNames(cls.Game, {}, [className ?? ''])}>
+            <h3 className={cls.Game__title}>{DisplayDateTimeMsk}</h3>
+            <div className={cls.Game__gameContainer}>
                 <div
                     style={{ backgroundImage: `url(${TeamLogoA})` }}
-                    className={cls.firstTeamImage}
+                    className={cls.Game__teamImage}
                 />
-                <div className={cls.score}>
+                <div className={cls.Game__score}>
                     {`${ScoreA} : ${ScoreB}` }
                 </div>
                 <div
                     style={{ backgroundImage: `url(${TeamLogoB})` }}
-                    className={cls.secondTeamImage}
+                    className={cls.Game__teamImage}
                 />
             </div>
             <Button
-                theme={ThemeButton.GAME}
+                theme={ThemeButton.POZ_GAME}
             >
-                <StatIcon className={cls.statIcon}/>
-              Полная статистика матча
+                <StatIcon className={cls.Game__statIcon}/>
+                Полная статистика матча
             </Button>
-        </div>
+        </article>
     )
 }

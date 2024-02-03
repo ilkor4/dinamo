@@ -3,11 +3,11 @@ import cls from './Button.module.scss'
 import { type ButtonHTMLAttributes, type FC } from 'react'
 
 export enum ThemeButton {
-    CLEAR = 'clear',
-    NEWS = 'news__button',
-    MENU = 'menu__button',
-    GAME = 'game__button',
-    LEAD = 'lead__button'
+    CLEAR = '_clear',
+    POZ_LEAD = 'Button_poz_lead',
+    POZ_MENU = 'Button_poz_menu',
+    POZ_NEWS = 'Button_poz_news',
+    POZ_GAME = 'Button_poz_game',
 }
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     className?: string

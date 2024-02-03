@@ -1,0 +1,26 @@
+.SectionTitle {
+  font: var(--font-l);
+  font-weight: var(--font-weight-xl);
+  color: var(--text-primary-color);
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+
+  &_clear {
+    text-transform: none;
+  }
+
+  &_poz_main {
+    color: var(--text-secondary-color);
+    text-shadow:
+            .7px .7px 0 var(--text-primary-color),
+            -.7px .7px 0 var(--text-primary-color),
+            .7px -.7px 0 var(--text-primary-color),
+            -.7px -.7px 0 var(--text-primary-color);
+    letter-spacing: 4px;
+  }
+
+  &_poz_roaster {
+    color: var(--text-quatrenary-color);
+  }
+
+}

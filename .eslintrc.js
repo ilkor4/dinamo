@@ -17,16 +17,16 @@ module.exports = {
         "react"
     ],
     "rules": {
-        'indent': [2, 4],
-        '@typescript-eslint/indent': [2, 4],
+        "indent": [2, 4],
+        "@typescript-eslint/indent": [2, 4],
         "react/react-in-jsx-scope": "off",
         "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".tsx"] }],
         "@typescript-eslint/strict-boolean-expressions": "warn",
         "@typescript-eslint/no-non-null-assertion": "off",
         "max-len": ["error", {"code": 100, "ignoreComments": true}],
-        '@typescript-eslint/explicit-function-return-type': "warn"
+        "@typescript-eslint/explicit-function-return-type": "warn"
     },
     "globals": {
-        '__IS_DEV__': true,
+        "__IS_DEV__": true,
     }
 }

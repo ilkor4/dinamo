@@ -1,1 +1,1 @@
-export {GameProvider} from "./ui/GameProvider";
+export { GameProvider } from './ui/GameProvider'

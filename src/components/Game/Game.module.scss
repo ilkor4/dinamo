@@ -1,56 +1,45 @@
 .Game {
   padding: 10px;
-  width: 300px;
+  width: var(--game-width);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  background-color: var(--inverted-bg-color);
-  border-radius: 10px;
+  background-color: var(--primary-color);
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  transform: translateX(calc((100% - 300px) / 2));
-}
+  transform: translateX(calc(100% - var(--game-width)) / 2);
+  border-radius: 10px;
 
-.title {
-  font: var(--font-m);
-  color: var(--secondary-color);
-}
+  &__title {
+    font: var(--font-s);
+    font-weight: var(--font-weight-s);
+    color: var(--text-secondary-color);
+  }
 
-.gameContainer {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
+  &__gameContainer {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
 
-.firstTeamImage {
-  width: 50px;
-  height: 50px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+  &__teamImage {
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
-.secondTeamImage {
-  width: 50px;
-  height: 50px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+  &__score {
+    font: var(--font-l);
+    font-weight: var(--font-weight-s);
+    color: var(--text-secondary-color);
+  }
 
-.score {
-  font: var(--font-l);
-  color: var(--secondary-color);
-}
-
-.caption {
-  text-align: center;
-  color: var(--secondary-color);
-}
-
-.statIcon {
-  fill: var(--secondary-color);
-  width: 30px;
-  height: 30px;
+  &__statIcon {
+    fill: var(--secondary-color);
+    width: 30px;
+    height: 30px;
+  }
 }

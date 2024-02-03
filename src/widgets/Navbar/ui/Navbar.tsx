@@ -18,15 +18,10 @@ export const Navbar: FC<NavbarProps> = ({ className }) => {
     }
 
     return (
-        <div className={classNames(cls.Navbar, {}, [className ?? ''])}>
+        <header className={classNames(cls.Navbar, {}, [className ?? ''])}>
             <ThemeSwitcher />
-            <TicketIcon className={cls.ticket}/>
+            <TicketIcon className={cls.Navbar__ticket}/>
             <Burger onOpen={onOpen}/>
-
-            {/* <div className={cls.links}>
-                <AppLink theme={AppLinkTheme.SECONDARY} to='/about'>Состав</AppLink>
-                <AppLink theme={AppLinkTheme.SECONDARY} to='/'>Главная</AppLink>
-            </div> */}
-        </div>
+        </header>
     )
 }

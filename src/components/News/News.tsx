@@ -3,48 +3,43 @@ import BallIcon from 'shared/assets/icons/ball-icon.svg'
 import { Button, ThemeButton } from 'shared/ui/Button/Button'
 import { textSliser } from 'shared/lib/textSlicer/textSlicer'
 import { type FC } from 'react'
+import { classNames } from 'shared/lib/classNames/classNames'
 
 interface NewsProps {
     className?: string
     newsImage: string
     newsText: string
+    newsTypeClass: string
 }
 export const News: FC<NewsProps> = (props) => {
     const {
         newsImage,
-        newsText
+        newsText,
+        newsTypeClass
     } = props
 
     return (
-        <div
-            className={`${cls.News} ${
-                (newsText !== '')
-                    ? ''
-                    : cls.wideImage
-            }`
-            }
+        <article
+            className={classNames(cls.News, {}, [cls[newsTypeClass]])}
             style={{ backgroundImage: `url(${newsImage})` }}
         >
             <div
                 className={
-                    `${cls.descriptionContainer}
-                        ${(newsText !== '')
-            ? ''
-            : cls.descriptionContainer_clear
-        }
-                    `}
+                    classNames(cls.News__wrapper, { [cls.News__wrapper_clear]: !newsText })
+                }
             >
-                <p className={cls.description}>
-                    {textSliser({ text: newsText, number: 80 })}
+                <p className={cls.News__text}>
+                    {textSliser({ text: newsText, number: 100 })}
                 </p>
                 <Button
-                    theme={ThemeButton.NEWS}
+                    theme={ThemeButton.POZ_NEWS}
                 >
-                    <BallIcon className={cls.ballIcon}/>
-                    Читать продолжение
+                    <div className={cls.News__buttonWrapper}>
+                        <BallIcon className={cls.News__ballIcon}/>
+                        Читать продолжение
+                    </div>
                 </Button>
             </div>
-        </div>
-    /* <iframe  className={'iframe'} src={'https://lokobasket.com/stat-rfb/game/?id=778005&apiUrl=https://org.infobasket.su&lang=ru'} /> */
+        </article>
     )
 }

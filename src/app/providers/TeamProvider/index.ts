@@ -1,1 +1,1 @@
-export {TeamProvider} from "./ui/TeamProvider";
+export { TeamProvider } from './ui/TeamProvider'

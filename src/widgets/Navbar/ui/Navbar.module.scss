@@ -1,23 +1,19 @@
 .Navbar {
-  position: fixed;
-  top: 10px;
+  padding: 5px 10px;
   width: 95%;
   min-height: var(--navbar-height);
-  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 5px;
+  z-index: 3;
   background-color: var(--inverted-bg-color);
   border: 1px solid var(--bg-color);
-  border-radius: 15px;
-  z-index: 10;
-}
+  border-radius: 10px;
+  transition: 1s ease;
 
-.ticket {
-  fill: var(--secondary-color)
-}
-
-.links {
-  display: flex;
-  gap: 10px;
+  &__ticket {
+    fill: var(--secondary-color)
+  }
 }

@@ -1,8 +1,8 @@
-import {createContext} from "react";
+import { createContext } from 'react'
 
 export interface SidebarContentProps {
-    collapsed?: boolean,
-    setCollapsed?: (collapsed: boolean) => void,
+    collapsed?: boolean
+    setCollapsed?: (collapsed: boolean) => void
 }
 
-export const SidebarContext = createContext<SidebarContentProps>({});
+export const SidebarContext = createContext<SidebarContentProps>({})

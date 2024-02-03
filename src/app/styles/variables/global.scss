@@ -1,16 +1,30 @@
 :root {
   --font-family-main: 'Inter', arial, 'Times New Roman', serif;
-  --font-size-m: 16px;
-  --font-line-m: 24px;
+
+  --font-size-s: 16px;
+  --font-line-s: 1.21;
+  --font-s: var(--font-size-s) / var(--font-line-s) var(--font-family-main);
+
+  --font-size-m: 20px;
+  --font-line-m: 1.21;
+  --font-weight-m: 400;
   --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+
   --font-size-l: 24px;
-  --font-line-l: 32px;
+  --font-line-l: 1.21;
+  --font-weight-l: 500;
   --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
 
+  --font-size-xl: 32px;
+  --font-line-xl: 1.21;
+  --font-weight-xl: 700;
+  --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
 
   // Размеры
   --navbar-height: 50px;
   --sidebar-width: 70%;
   --sidebar-width-collapsed: 0px;
   --game-width: 300px;
+  --news-width: 100%;
+  --surname-width: 175px;
 }

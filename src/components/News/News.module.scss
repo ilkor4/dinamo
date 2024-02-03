@@ -1,67 +1,73 @@
-@keyframes rotate {
+@keyframes animRotate {
   to {
     transform: rotate(360deg);
   }
 }
 
 .News {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 20px;
-  position: relative;
-  width: 300px;
-  aspect-ratio: 1/1.3;
   padding: 5px;
   box-sizing: border-box;
+  width: var(--news-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border: 1px solid var(--primary-color);
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 2px 2px 4px 0 var(--primary-color)
-}
+  box-shadow: 0 0 32px 0 rgba(0, 0, 0, .1);
 
-.descriptionContainer {
-  width: 100%;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  background-color: var(--primary-color);
-  border-radius: 10px;
-}
+  &_vertical {
+    aspect-ratio: 1/1.3;
+  }
 
-.descriptionContainer_clear {
-  padding: 0;
-  gap: 0;
-}
+  &_square {
+    aspect-ratio: 1/1;
+  }
 
+  &_wide {
+    aspect-ratio: 1.8/1;
+  }
 
-.wideImage {
-  aspect-ratio: 1.8/1;
-  z-index: 4;
-}
+  &__wrapper {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+  }
 
-.description {
-  // height: 6rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font: var(--font-m);
-  color: var(--secondary-color);
-  z-index: 2;
+  &__wrapper_clear {
+    padding: 0;
+    gap: 0;
+  }
 
-  // display: -webkit-box;
-  // -webkit-line-clamp: 4; /* номер строки где указывается троеточие */
-  // -webkit-box-orient: vertical;
-}
+  &__text {
+    font: var(--font-s);
+    font-weight: var(--font-weight-m);
+    color: var(--text-secondary-color);
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
-.ballIcon {
-  fill: var(--secondary-color);
-  width: 25px;
-  height: 25px;
-  animation: rotate 3s linear infinite;
+  &__buttonWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__ballIcon {
+    width: 25px;
+    height: 25px;
+    fill: var(--secondary-color);
+    animation: animRotate 3s linear infinite;
+  }
+
 }

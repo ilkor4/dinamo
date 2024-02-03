@@ -3,10 +3,10 @@ import {
     SidebarContext
 } from 'app/providers/SidebarProvider/lib/SidebarContext'
 
-interface Props {
+interface SidebarProps {
     children: ReactNode
 }
-const SidebarProvider: FC<Props> = ({ children }) => {
+const SidebarProvider: FC<SidebarProps> = ({ children }) => {
     const [collapsed, setCollapsed] = useState<boolean>(true)
 
     const defaultProps = useMemo(() => ({

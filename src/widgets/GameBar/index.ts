@@ -1,1 +1,1 @@
-export {GameBar} from "./ui/GameBar";
+export { GameBar } from './ui/GameBar'

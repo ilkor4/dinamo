@@ -1,30 +1,30 @@
-import webpack from "webpack";
-import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import type webpack from 'webpack'
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 
-export function buildLoaders (isDev: boolean): webpack.RuleSetRule[]  {
+export function buildLoaders (isDev: boolean): webpack.RuleSetRule[] {
     const svgLoader = {
         test: /\.svg$/i,
         issuer: /\.[jt]sx?$/,
-        use: ['@svgr/webpack'],
-    };
+        use: ['@svgr/webpack']
+    }
 
     const fileLoader = {
         test: /\.(png|jpe?g|gif|mp4)$/i,
         use: [
             {
-                loader: 'file-loader',
-            },
-        ],
-    };
+                loader: 'file-loader'
+            }
+        ]
+    }
 
     const cssLoader = {
         test: /\.s[ac]ss$/i,
         use: [
             isDev
-                ? "style-loader"
+                ? 'style-loader'
                 : MiniCssExtractPlugin.loader,
             {
-                loader: "css-loader",
+                loader: 'css-loader',
                 options: {
                     modules: {
                         auto: (resPath: string) => Boolean(resPath.includes('.module')),
@@ -32,24 +32,23 @@ export function buildLoaders (isDev: boolean): webpack.RuleSetRule[]  {
                             ? '[path][name]__[local]--[hash:base64:5]'
                             : '[hash:base64:8]'
                     }
-                },
+                }
             },
-            "sass-loader",
-
-        ],
+            'sass-loader'
+        ]
     }
 
     const typescriptLoader = {
         test: /\.tsx?$/,
         use: 'ts-loader',
-        exclude: /node_modules/,
+        exclude: /node_modules/
     }
 
     const babelLoader = {
         test: /\.(js|jsx|tsx)$/,
         exclude: /node_modules/,
         use: {
-            loader: "babel-loader",
+            loader: 'babel-loader',
             options: {
                 presets: ['@babel/preset-env']
             }
@@ -61,6 +60,6 @@ export function buildLoaders (isDev: boolean): webpack.RuleSetRule[]  {
         fileLoader,
         cssLoader,
         babelLoader,
-        typescriptLoader,
+        typescriptLoader
     ]
 }

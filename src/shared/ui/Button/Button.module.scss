@@ -1,58 +1,62 @@
+@keyframes animButton {
+  to {
+   padding: 20px 40px;
+  }
+}
+
 .Button {
-  cursor: pointer;
   padding: 0;
   margin: 0;
+  font: var(--font-s);
+  font-weight: var(--font-weight-s);
   border: none;
   background: none;
   outline: none;
-}
+  cursor: pointer;
 
-.clear {
-  padding: 0;
-  margin: 0;
-  border: none;
-  outline: none;
-}
+  &_clear {
+    outline: none;
+  }
 
-.menu__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  &_poz_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.news__button {
-  width: 100%;
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  align-self: flex-start;
-  gap: 5px;
-  color: var(--secondary-color);
-  background-color: var(--inverted-bg-color);
-  border: 1px solid var(--secondary-color);
-  border-radius: 10px;
-  z-index: 2;
-}
+  &_poz_news {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+    background-color: var(--inverted-bg-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    z-index: 2;
+  }
 
-.game__button {
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  color: var(--secondary-color);
-  background-color: var(--inverted-bg-color);
-  border: 1px solid var(--secondary-color);
-  border-radius: 10px;
-}
+  &_poz_game {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--text-secondary-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+  }
 
-.lead__button {
-  width: max-content;
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  color: var(--primary-color);
-  background-color: inherit;
-  border: 1px solid var(--primary-color);
-  border-radius: 10px;
+  &_poz_lead {
+    width: 180px;
+    height: 60px;
+    color: var(--text-tertiary-color);
+    background-color: inherit;
+    border: .7px solid var(--tertiary-color);
+    border-radius: 10px;
+    position: relative;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+  }
 }

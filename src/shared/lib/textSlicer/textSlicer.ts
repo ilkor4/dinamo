@@ -1,12 +1,11 @@
 interface iTextSliser {
-   text: string,
-   number: number,
+    text: string
+    number: number
 }
 
-export const textSliser = (params: iTextSliser) => {
-
-    const { text, number } = params;
-    let sliceText = text.slice(0, number)
+export const textSliser = (params: iTextSliser): string => {
+    const { text, number } = params
+    const sliceText = text.slice(0, number)
     const pointIndex = sliceText.lastIndexOf('.')
 
     if (pointIndex === -1) {
@@ -16,10 +15,6 @@ export const textSliser = (params: iTextSliser) => {
             if (number > text.length) return text
 
             else return `${sliceText}...`
-        }
-
-        else return `${text.slice(0, commaIndex)}...`
-    }
-
-    else return `${text.slice(0, pointIndex)}`
+        } else return `${text.slice(0, commaIndex)}...`
+    } else return `${text.slice(0, pointIndex)}`
 }

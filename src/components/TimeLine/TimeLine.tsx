@@ -3,21 +3,27 @@ import cls from './TimeLine.module.scss'
 import { News } from 'components/News/News'
 import { newsArray } from 'shared/assets/utils/constants'
 import { type FC } from 'react'
+import { SectionTitle, SectionTitleTheme } from 'shared/ui/SectionTitle/SectionTitle'
 
 interface TimeLineProps {
     className?: string
 }
 export const TimeLine: FC<TimeLineProps> = ({ className }) => {
     return (
-        <ul className={classNames(cls.TimeLine, {}, [className ?? ''])}>
-            {newsArray.map(({ newsImage, newsText }) =>
-                <li key={newsImage}>
-                    <News
-                        newsImage={newsImage}
-                        newsText={newsText}
-                    />
-                </li>
-            )}
-        </ul>
+        <section className={classNames(cls.TimeLine, {}, [className ?? ''])}>
+            <SectionTitle theme={SectionTitleTheme.POZ_MAIN}>
+                Новости</SectionTitle>
+            <ul className={cls.TimeLine__list}>
+                {newsArray.map(({ newsImage, newsText, newsTypeClass }) =>
+                    <li key={newsImage} className={cls.TimeLine__item}>
+                        <News
+                            newsImage={newsImage}
+                            newsText={newsText}
+                            newsTypeClass={newsTypeClass}
+                        />
+                    </li>
+                )}
+            </ul>
+        </section>
     )
 }

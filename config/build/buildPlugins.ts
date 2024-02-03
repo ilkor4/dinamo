@@ -14,9 +14,9 @@ export const buildPlugins = (paths: BuildPaths): webpack.WebpackPluginInstance[]
             filename: 'css/[name].[contenthash:8].css',
             chunkFilename: 'css/[name].[contenthash:8].css'
         }),
-        new webpack.HotModuleReplacementPlugin(),
-        new BundleAnalyzerPlugin({
+        new webpack.HotModuleReplacementPlugin()
+        /* new BundleAnalyzerPlugin({
             openAnalyzer: false
-        })
+        }) */
     ]
 }

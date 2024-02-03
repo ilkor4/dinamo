@@ -12,7 +12,7 @@ export const App: FC = () => {
     return (
         <div className={classNames('app', {}, [theme ?? ''])}>
             <Navbar />
-            <div className="content-page">
+            <div className="content">
                 <AppRouter />
                 <Sidebar />
             </div>

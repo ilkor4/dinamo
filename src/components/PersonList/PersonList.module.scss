@@ -1,0 +1,10 @@
+.PersonList {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+}

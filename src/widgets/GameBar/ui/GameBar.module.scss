@@ -4,17 +4,20 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  z-index: 3;
-}
 
-.widget {
-  width: var(--game-width);
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  display: flex;
-  gap: 100px;
-  overflow: scroll;
-  scroll-snap-type: x mandatory;
+  &__widget {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: var(--game-width);
+    box-sizing: border-box;
+    display: flex;
+    gap: 100px;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  &__item {
+    width: min-content;
+  }
 }

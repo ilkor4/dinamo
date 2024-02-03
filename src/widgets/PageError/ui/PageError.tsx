@@ -7,7 +7,7 @@ interface PageErrorProps {
     className?: string
 }
 export const PageError: FC<PageErrorProps> = ({ className }) => {
-    const reloadPage = () => {
+    const reloadPage = (): void => {
         location.reload()
     }
 

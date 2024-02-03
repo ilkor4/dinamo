@@ -1,15 +1,11 @@
-import { classNames } from 'shared/lib/classNames/classNames'
 import cls from './Video.module.scss'
 import MainVideo from 'shared/assets/video/lead-video.mp4'
 import { type FC } from 'react'
 
-interface VideoProps {
-    className?: string
-}
-export const Video: FC<VideoProps> = ({ className }) => {
+export const Video: FC = () => {
     return (
         <video
-            className={classNames(cls.Video, {}, [className ?? ''])}
+            className={cls.Video}
             playsInline
             autoPlay
             muted

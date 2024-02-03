@@ -10,7 +10,7 @@ interface BurgerProps {
 }
 export const Burger: FC<BurgerProps> = ({ className, onOpen }) => {
     return (
-        <Button theme={ThemeButton.MENU} onClick={onOpen}>
+        <Button theme={ThemeButton.POZ_MENU} onClick={onOpen}>
             <BurgerIcon
                 className={classNames(cls.Burger, {}, [className ?? ''])}
             />

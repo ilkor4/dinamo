@@ -1,10 +1,8 @@
 declare module '*.scss'{
-    interface IClassNames {
-        [classname: string]: string
-    }
+    type IClassNames = Record<string, string>
 
-    const classNames: IClassNames;
-    export = classNames;
+    const classNames: IClassNames
+    export = classNames
 }
 
 declare module '*.png';
@@ -14,8 +12,8 @@ declare module '*.woff';
 declare module '*.woff2';
 declare module '*.mp4';
 declare module '*.svg' {
-    import React from 'react';
+    import type React from 'react'
 
-    const SVG: React.VFC<React.SVGProps<SVGSVGElement>>;
-    export default SVG;
+    const SVG: React.VFC<React.SVGProps<SVGSVGElement>>
+    export default SVG
 }

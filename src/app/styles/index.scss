@@ -11,7 +11,7 @@
 .app {
   font: var(--font-m);
   background: var(--bg-color);
-  color: var(--primary-color);
+  color: var(--text-primary-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
   position: relative;
 }
 
-.content-page {
+.content {
   width: 100%;
   display: flex;
   position: relative;
@@ -30,8 +30,7 @@
   flex-grow: 1;
 }
 
-
-.main {
+.main-page {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -39,7 +38,12 @@
   gap: 50px;
 }
 
-.roaster {
-  padding: 100px 20px 0;
-  background-color: white;
+.roaster-page {
+  padding: 120px 2.5% 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  background-color: var(--tertiary-color);
 }

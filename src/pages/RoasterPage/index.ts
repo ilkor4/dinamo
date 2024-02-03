@@ -1,1 +1,1 @@
-export {RoasterPageAsync as RoasterPage} from "./ui/RoasterPage.async";
+export { RoasterPageAsync as RoasterPage } from './ui/RoasterPage.async'

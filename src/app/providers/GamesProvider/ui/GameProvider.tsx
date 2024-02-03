@@ -7,6 +7,7 @@ import {
 } from 'react'
 import { mainApi } from 'features/MainApi/MainApi'
 import { GamesContext } from '../lib/GamesContext'
+import { type TeamGameData } from 'features/MainApi/types/TeamGamesData'
 
 interface GameProviderProps {
     children: ReactNode

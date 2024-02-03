@@ -1,13 +1,13 @@
 {
   "name": "dinamo",
   "version": "1.0.0",
-  "description": "",
   "homepage": "https://ilkor4.github.io/dinamo/",
+  "description": "",
   "private": true,
   "scripts": {
     "build": "webpack",
     "start": "webpack serve --env port=3000",
-    "predeploy": "npm run build:prod",
+    "predeploy": "npm run build:dev",
     "deploy": "gh-pages -d docs",
     "build:dev": "webpack --env mode=development",
     "build:prod": "webpack --env mode=production",
@@ -38,6 +38,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.33.2",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.1.1",
     "html-webpack-plugin": "^5.6.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
@@ -58,7 +59,6 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
-    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
