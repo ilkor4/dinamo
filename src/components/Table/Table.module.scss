@@ -1,0 +1,49 @@
+.Table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  &__heading {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  &__container {
+    align-self: flex-start;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  &__row {
+    border: 1px solid var(--inverted-bg-color)
+  }
+
+  &__title {
+    padding: 5px;
+    box-sizing: border-box;
+    width: max-content;
+    border: 1px solid var(--inverted-bg-color);
+    font: var(--font-m);
+    font-weight: var(--font-weight-l);
+    color: var(--text-primary-color);
+  }
+
+  &__item {
+    padding: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    font: var(--font-s);
+    color: var(--text-primary-color);
+    width: max-content;
+    border: 1px solid var(--inverted-bg-color)
+  }
+}

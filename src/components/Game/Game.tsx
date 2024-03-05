@@ -2,23 +2,33 @@ import { classNames } from 'shared/lib/classNames/classNames'
 import cls from './Game.module.scss'
 import { Button, ThemeButton } from 'shared/ui/Button/Button'
 import StatIcon from 'shared/assets/icons/stat-icon.svg'
-import { type FC } from 'react'
+import React, { type FC } from 'react'
 import { type TeamGameData } from 'features/MainApi/types/TeamGamesData'
+import { useProtocol } from 'app/providers/ProtocolProvider'
+import { type ProtocolState } from 'app/providers/ProtocolProvider/lib/useProtocol'
 
 interface GameProps {
     className?: string
     game: TeamGameData
+    protocolState: ProtocolState
+    setProtocolState: (protocolState: ProtocolState) => void
 }
 export const Game: FC<GameProps> = (props) => {
-    const { game, className } = props
+    const { game, className, setProtocolState, protocolState } = props
 
     const {
+        GameID,
         DisplayDateTimeMsk,
         TeamLogoA,
         TeamLogoB,
         ScoreA,
         ScoreB
     } = game
+
+    const onStatOpen = (): void => {
+        setProtocolState({ ...protocolState, isOpen: true, gameId: GameID, gameInfo: game })
+        console.log(protocolState)
+    }
 
     return (
         <article className={classNames(cls.Game, {}, [className ?? ''])}>
@@ -37,6 +47,7 @@ export const Game: FC<GameProps> = (props) => {
                 />
             </div>
             <Button
+                onClick={onStatOpen}
                 theme={ThemeButton.POZ_GAME}
             >
                 <StatIcon className={cls.Game__statIcon}/>

@@ -1,5 +1,5 @@
-import SidebarProvider from "./ui/SidebarProvider";
+import SidebarProvider from './ui/SidebarProvider'
 
 export {
-    SidebarProvider,
+    SidebarProvider
 }

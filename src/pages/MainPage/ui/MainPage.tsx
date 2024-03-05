@@ -5,7 +5,7 @@ export default function MainPage (): JSX.Element {
     return (
         <div className="main-page">
             <Lead />
-            <GameBar />
+            {/* <GameBar /> */}
             <TimeLine />
         </div>
     )

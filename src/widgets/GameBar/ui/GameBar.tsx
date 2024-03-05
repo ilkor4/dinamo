@@ -7,11 +7,19 @@ import { type FC, useContext, useEffect, useState } from 'react'
 import { trimGames } from 'shared/lib/trimGames/trimGames'
 import { type TeamGameData } from 'features/MainApi/types/TeamGamesData'
 import { SectionTitle, SectionTitleTheme } from 'shared/ui/SectionTitle/SectionTitle'
+import { type ProtocolState } from 'app/providers/ProtocolProvider/lib/useProtocol'
 
 interface GameBarProps {
     className?: string
+    protocolState: ProtocolState
+    setProtocolState: (protocolState: ProtocolState) => void
 }
-export const GameBar: FC<GameBarProps> = ({ className }) => {
+export const GameBar: FC<GameBarProps> = (props: GameBarProps) => {
+    const {
+        className,
+        setProtocolState,
+        protocolState
+    } = props
     const gamesArray = useContext(GamesContext)
     const [renderGames, setRenderGames] = useState<TeamGameData[]>([])
 
@@ -31,7 +39,10 @@ export const GameBar: FC<GameBarProps> = ({ className }) => {
                 {renderGames.map((game, index) => (
                     <li key ={index} className={cls.GameBar__item}>
                         <Game
-                            game = {game} />
+                            game = {game}
+                            setProtocolState = {setProtocolState}
+                            protocolState = {protocolState}
+                        />
                     </li>
                 ))}
             </ul>
