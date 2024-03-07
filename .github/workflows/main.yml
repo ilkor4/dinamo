@@ -6,27 +6,27 @@ on:
   pull_request:
     branches: [main]
 jobs:
-  runs-on: ubuntu-latest
-  strategy:
-    matrix:
-      node-version: [ 17.x ]
-  steps:
-    - name: Checkout Commit
-    uses: actions/checkout@v2
-    - name: starting Node.js ${{ matrix.node-version }}
-    uses: actions/setup-node@v1
-    with:
-      node-version: ${{ matrix.node-version }}
-    - name: install modules
-      run: npm install
-    - name: build production project
-      run: npm run build:prod
-      if: always()
-    - name: linting typeScript
-      run: npm run lint:ts
-      if: always()
-    - name: linting scss
-      run: npm run lint:scss
-      if: always()
-    - name: testing unit
-      run: npm run test:unit
+  pipeline:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 17.x ]
+    steps:
+      - uses: actions/checkout@v2
+      - name: starting Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: install modules
+        run: npm install
+      - name: build production project
+        run: npm run build:prod
+        if: always()
+      - name: linting typeScript
+        run: npm run lint:ts
+        if: always()
+      - name: linting scss
+        run: npm run lint:scss
+        if: always()
+      - name: testing unit
+        run: npm run test:unit
