@@ -1,0 +1,75 @@
+@keyframes anim-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.News {
+  padding: 5px;
+  box-sizing: border-box;
+  width: var(--news-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 32px 0 rgba(0, 0, 0, 10%);
+
+  &_vertical {
+    aspect-ratio: 1/1.3;
+    grid-row: span 3;
+  }
+
+  &_square {
+    aspect-ratio: 1/1;
+    grid-row: span 2;
+  }
+
+  &_wide {
+    aspect-ratio: 1.8/1;
+  }
+
+  &__wrapper {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+  }
+
+  &__wrapper_clear {
+    padding: 0;
+    gap: 0;
+  }
+
+  &__text {
+    font: var(--font-s);
+    font-weight: var(--font-weight-m);
+    color: var(--text-secondary-color);
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__buttonWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__ballIcon {
+    width: 25px;
+    height: 25px;
+    fill: var(--secondary-color);
+    animation: anim-rotate 3s linear infinite;
+  }
+
+}

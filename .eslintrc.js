@@ -24,7 +24,7 @@ module.exports = {
         "@typescript-eslint/strict-boolean-expressions": "warn",
         "@typescript-eslint/no-non-null-assertion": "off",
         "max-len": ["error", {"code": 100, "ignoreComments": true}],
-        "@typescript-eslint/explicit-function-return-type": "warn"
+        "@typescript-eslint/explicit-function-return-type": "off"
     },
     "globals": {
         "__IS_DEV__": true,

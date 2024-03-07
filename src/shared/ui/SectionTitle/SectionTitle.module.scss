@@ -10,13 +10,8 @@
   }
 
   &_poz_main {
-    color: var(--text-secondary-color);
-    text-shadow:
-            .7px .7px 0 var(--text-primary-color),
-            -.7px .7px 0 var(--text-primary-color),
-            .7px -.7px 0 var(--text-primary-color),
-            -.7px -.7px 0 var(--text-primary-color);
-    letter-spacing: 4px;
+    color: var(--text-primary-color);
+    text-transform: uppercase;
   }
 
   &_poz_roaster {
