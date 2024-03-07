@@ -19,16 +19,18 @@
 ## Стек:
 
 ---
-  <img id="stack-img" src="./src/shared/assets/readme/html5-original.svg" title="HTML5" alt="HTML5" width="50px" height="50px" />
-  <img id="stack-img" src="./src/shared/assets/readme/css3-original.svg" title="CSS3" alt="CSS3" width="50px" height="50px" />
-  <img id="stack-img" src="./src/shared/assets/readme/sass-original.svg" title="Sass\Scss" alt="Sass\Scss" width="50px" height="50px" />
-  <img id="stack-img" src="./src/shared/assets/readme/javascript-original.svg" title="JavaScript" alt="JavaScript" width="50px" height="50px" />
-  <img id="stack-img" src="./src/shared/assets/readme/typescript.svg" title="TypeScript" alt="TypeScript" width="50px" height="50px" />
-  <img id="stack-img" src="./src/shared/assets/readme/react-original.svg" title="React" alt="React" width="50px" height="50px" />
-  <img id="stack-img" src="./src/shared/assets/readme/webpack-original.svg" title="Webpack" alt="Webpack" width="50px" height="50px" />
-  <img id="stack-img" src="./src/shared/assets/readme/nodejs-original.svg" title="Node.js" alt="Node.js" width="50px" height="50px" />
-  <img id="stack-img" src="./src/shared/assets/readme/git-original.svg" title="Git" alt="Git" width="50px" height="50px" />
-  <img id="stack-img" src="./src/shared/assets/readme/vscode-original.svg" title="VSCode" alt="VSCode" width="50px" height="50px" />
+<div>
+  <img id="stack-img" src="./src/shared/assets/readme/html5-original.svg" title="HTML5" alt="HTML5" width="50px" height="50px" >&nbsp
+  <img id="stack-img" src="./src/shared/assets/readme/css3-original.svg" title="CSS3" alt="CSS3" width="50px" height="50px" >&nbsp
+  <img id="stack-img" src="./src/shared/assets/readme/sass-original.svg" title="Sass\Scss" alt="Sass\Scss" width="50px" height="50px" />&nbsp
+  <img id="stack-img" src="./src/shared/assets/readme/javascript-original.svg" title="JavaScript" alt="JavaScript" width="50px" height="50px" />&nbsp
+  <img id="stack-img" src="./src/shared/assets/readme/typescript.svg" title="TypeScript" alt="TypeScript" width="50px" height="50px" />&nbsp
+  <img id="stack-img" src="./src/shared/assets/readme/react-original.svg" title="React" alt="React" width="50px" height="50px" />&nbsp
+  <img id="stack-img" src="./src/shared/assets/readme/webpack-original.svg" title="Webpack" alt="Webpack" width="50px" height="50px" />&nbsp
+  <img id="stack-img" src="./src/shared/assets/readme/nodejs-original.svg" title="Node.js" alt="Node.js" width="50px" height="50px" />&nbsp
+  <img id="stack-img" src="./src/shared/assets/readme/git-original.svg" title="Git" alt="Git" width="50px" height="50px" />&nbsp
+  <img id="stack-img" src="./src/shared/assets/readme/vscode-original.svg" title="VSCode" alt="VSCode" width="50px" height="50px" />&nbsp
+</div>
 
 ## Директории проекта:
 
