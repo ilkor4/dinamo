@@ -1,7 +1,7 @@
 import { classNames } from 'shared/lib/classNames/classNames'
 import cls from './GameBar.module.scss'
-import { Game } from 'components/Game/Game'
-import { Gif } from 'components/Gif/Gif'
+import { Game } from 'entities/Game/Game'
+import { Gif } from 'entities/Gif/Gif'
 import { GamesContext } from 'app/providers/GamesProvider/lib/GamesContext'
 import { type FC, useContext, useEffect, useState } from 'react'
 import { trimGames } from 'shared/lib/trimGames/trimGames'
@@ -11,11 +11,13 @@ import { type ProtocolState } from 'app/providers/ProtocolProvider/lib/useProtoc
 
 interface GameBarProps {
     className?: string
+    isVertical: boolean
     protocolState: ProtocolState
     setProtocolState: (protocolState: ProtocolState) => void
 }
 export const GameBar: FC<GameBarProps> = (props: GameBarProps) => {
     const {
+        isVertical,
         className,
         setProtocolState,
         protocolState
@@ -29,12 +31,18 @@ export const GameBar: FC<GameBarProps> = (props: GameBarProps) => {
         }
     }, [gamesArray])
 
+    const mods: Record<string, boolean> = {
+        [cls.vertical]: isVertical
+    }
+
     return (
-        <section className={classNames(cls.GameBar, {}, [className ?? ''])}>
+        <section
+            className={classNames(cls.GameBar, mods, [className ?? ''])} id="gameBar"
+        >
             <SectionTitle theme={SectionTitleTheme.POZ_MAIN}>
                 Календарь
             </SectionTitle>
-            <Gif />
+            <Gif className={cls.GameBar__gif}/>
             <ul className={cls.GameBar__widget}>
                 {renderGames.map((game, index) => (
                     <li key ={index} className={cls.GameBar__item}>

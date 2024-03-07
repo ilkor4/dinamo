@@ -4,7 +4,7 @@ export const trimGames = (gamesArray: TeamGameData[]): TeamGameData[] => {
     const renderArray = []
     const recentGames = gamesArray
         .filter(({ GameStatus }) => GameStatus === 1)
-        .slice(-6)
+        .slice(-11)
     const nextGame = gamesArray
         .filter(({ GameStatus }) => GameStatus === 0)[0]
 

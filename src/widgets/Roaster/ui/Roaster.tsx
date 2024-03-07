@@ -6,7 +6,7 @@ import {
     type Player as TPlayer,
     type Staff as TStaff
 } from 'features/MainApi/types/TeamRoasterData'
-import { PersonList } from 'components/PersonList/PersonList'
+import { PersonList } from 'widgets/PersonList/PersonList'
 import { SectionTitle, SectionTitleTheme } from 'shared/ui/SectionTitle/SectionTitle'
 
 interface RoasterProps {

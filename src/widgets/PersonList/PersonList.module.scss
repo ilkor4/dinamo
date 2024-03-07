@@ -1,0 +1,21 @@
+.PersonList {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display:  grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  column-gap: 20px;
+  row-gap: 40px;
+  align-items: center;
+  background-color: white;
+}
+
+@media screen and (width <= 500px) {
+  .PersonList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

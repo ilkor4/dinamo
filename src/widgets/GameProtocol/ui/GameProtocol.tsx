@@ -2,12 +2,12 @@ import { classNames } from 'shared/lib/classNames/classNames'
 import cls from './GameProtocol.module.scss'
 import React, { type FC } from 'react'
 import { type ProtocolState } from 'app/providers/ProtocolProvider/lib/useProtocol'
-import { Table } from 'components/Table/Table'
+import { Table } from 'widgets/Table/Table'
 import { Loader } from 'shared/ui/Loader/Loader'
 
 interface GameProtocolProps {
     protocolState: ProtocolState
-    setProtocolState: (protocolState: { isOpen: boolean }) => void
+    setProtocolState: (protocolState: ProtocolState) => void
     className?: string
 }
 export const GameProtocol: FC<GameProtocolProps> = (props) => {
@@ -24,12 +24,15 @@ export const GameProtocol: FC<GameProtocolProps> = (props) => {
     const closePopup = () => {
         setProtocolState({
             ...protocolState,
+            gameId: null,
+            gameData: null,
+            gameInfo: null,
             isOpen: false
         })
         console.log(protocolState)
     }
 
-    const onOverlayClick = (e: React.MouseEvent) => {
+    const onContentClick = (e: React.MouseEvent) => {
         e.stopPropagation()
     }
 
@@ -41,7 +44,7 @@ export const GameProtocol: FC<GameProtocolProps> = (props) => {
             >
                 <div
                     className={cls.GameProtocol__content}
-                    onClick={onOverlayClick}
+                    onClick={onContentClick}
                 >
                     {
                         (protocolState.gameInfo !== null && protocolState.gameData !== null)

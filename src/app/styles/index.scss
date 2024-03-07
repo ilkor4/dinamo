@@ -4,6 +4,10 @@
 @import "themes/normal";
 @import "themes/dark";
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   // background: red;
 }
@@ -18,15 +22,19 @@
   align-items: center;
   gap: 50px;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 .content {
   width: 100%;
+  margin: 0 auto;
+  max-width: 1900px;
   display: flex;
   position: relative;
 }
 
 .page-wrapper {
+  width: 100%;
   flex-grow: 1;
 }
 

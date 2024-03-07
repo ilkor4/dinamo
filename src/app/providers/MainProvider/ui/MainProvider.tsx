@@ -1,5 +1,5 @@
 import { type FC, type PropsWithChildren } from 'react'
-import { BrowserRouter, HashRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import { ErrorBoundary } from 'app/providers/ErrorBoundary'
 import { ThemeProvider } from 'app/providers/ThemeProvider'
 import { SidebarProvider } from 'app/providers/SidebarProvider'

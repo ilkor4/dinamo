@@ -23,7 +23,7 @@ export function useProtocol (): useProtocolResult {
     })
 
     const fetchGame = useCallback(async () => {
-        return await mainApi.getGameProtocol(protocolState.gameId!) /* Костыль */
+        return await mainApi.getGameProtocol(protocolState.gameId!)
     }, [protocolState.gameId])
 
     useEffect(() => {

@@ -1,7 +1,8 @@
 import { classNames } from 'shared/lib/classNames/classNames'
 import cls from './ThemeSwitcher.module.scss'
 import { Theme, useTheme } from 'app/providers/ThemeProvider'
-import DarkIcon from 'shared/assets/icons/teamIcons/groznyi-logo.png'
+import DarkIcon from 'shared/assets/icons/theme-dark.svg'
+import LightIcon from 'shared/assets/icons/theme-light.svg'
 import { Button, ThemeButton } from 'shared/ui/Button/Button'
 import { type FC } from 'react'
 
@@ -19,16 +20,8 @@ export const ThemeSwitcher: FC<ThemeSwitcherProps> = ({ className }) => {
         >
             {
                 theme === Theme.LIGHT
-                    ? <img
-                        src={DarkIcon}
-                        className={cls.logo}
-                        alt={'Тёмный логотип баскетбольного Динамо г. Грозный'}
-                    />
-                    : <img
-                        src={DarkIcon}
-                        className={cls.logo}
-                        alt={'Тёмный логотип баскетбольного Динамо г. Грозный'}
-                    />
+                    ? <LightIcon className={cls.logo}/>
+                    : <DarkIcon className={cls.logo}/>
             }
         </Button>
     )
