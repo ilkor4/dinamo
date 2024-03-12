@@ -1,6 +1,48 @@
 export const newsArray = [
     {
         // eslint-disable-next-line max-len
+        newsImage: 'https://sun9-79.userapi.com/impg/FveFZCoSZ70GoRSgNlMuoq6FYIZSlf0W7T5DGQ/EzFRXDAy7UU.jpg?size=807x807&quality=95&sign=1ddb0030fedddc3d09f9c8ccd68512fb&c_uniq_tag=X7kxA1oZ-VV54w0P5kewmTjgsiForHWiVj6V6ctZkJk&type=album',
+        newsLink: 'https://vk.com/wall-28208745_150714',
+        newsText: '',
+        newsTypeClass: 'News_square'
+    },
+    {
+        // eslint-disable-next-line max-len
+        newsImage: 'https://sun9-47.userapi.com/impg/Kx68vWDDVY7mP3oqeU2J_euHkFfj3bgxyoddaw/wbGw3XPpCcM.jpg?size=807x807&quality=95&sign=4261eefffb513c1ca94463d7e09c6dbc&c_uniq_tag=bZ1WK_03syvQ3slNbYUWXc8Yl4QPWE6yLWJSYOKvlWQ&type=album',
+        newsLink: 'https://vk.com/wall-220890545_853',
+        newsText: '',
+        newsTypeClass: 'News_square'
+    },
+    {
+        // eslint-disable-next-line max-len
+        newsImage: 'https://sun9-65.userapi.com/impg/1Mcy2nFa5qZA6VOzwu7c_V7qlZ2TBlu7JBiOMg/tBv-3hJOgbQ.jpg?size=807x807&quality=95&sign=7235d16c5e06d2ea0c22b63dfc2ea118&c_uniq_tag=NPparo0e9vHeNUGS3MN9Dmv1zid0X4PMaY_Y9drVl-A&type=album',
+        newsLink: 'https://vk.com/wall-28208745_150703',
+        newsText: '',
+        newsTypeClass: 'News_square'
+    },
+    {
+        // eslint-disable-next-line max-len
+        newsImage: 'https://sun9-58.userapi.com/impg/D_auyOl8xybZ8ROEkYa7KRkHddxh9czZqu2FWA/-uDEUPWPAzw.jpg?size=807x605&quality=95&sign=dfa5e269243a16365a5bc0ad03149627&c_uniq_tag=hmQ4QO3qRV7QjAGhDOuxXBqjruJd3SahtGP4ebwhoWw&type=album',
+        newsLink: 'https://vk.com/wall-220890545_846',
+        newsText: '',
+        newsTypeClass: 'News_wide'
+    },
+    {
+        // eslint-disable-next-line max-len
+        newsImage: 'https://sun9-57.userapi.com/impg/kGSbkztNw2tXEVPSBL7BnILYacI2dpoH-mP0kQ/5Da_muAiyrU.jpg?size=1839x1380&quality=95&sign=58b53689cb8ae6995d74bd046b3c4660&type=album',
+        newsLink: 'https://vk.com/wall-220890545_843',
+        newsText: '',
+        newsTypeClass: 'News_wide'
+    },
+    {
+        // eslint-disable-next-line max-len
+        newsImage: 'https://sun9-8.userapi.com/impg/1823TMuDxAvTh_z4S4_MdO2BGBgIPvxcfLZZOw/eh1XjkzOWmI.jpg?size=807x454&quality=95&sign=149d8f398fe84f790cb9f8f23ca5d70f&c_uniq_tag=dhew7mOIqXQlktsYQwX5i7jLnfV-1P1iVQgzCgpaQ0k&type=album',
+        newsLink: 'https://vk.com/wall-220890545_841',
+        newsText: '',
+        newsTypeClass: 'News_wide'
+    },
+    {
+        // eslint-disable-next-line max-len
         newsImage: 'https://sun9-55.userapi.com/impg/yQGxkeqW-lbET1Su-m35RPHqniD7hylE2AVanA/iJRw08RtTl4.jpg?size=2048x2048&quality=95&sign=6464b2bed3fe34155e8d6f76ec480659&type=album',
         newsLink: 'https://vk.com/wall-220890545_821',
         newsText: '',
