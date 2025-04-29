@@ -118,5 +118,5 @@
 ---
 
 - `Адрес репозитория:` https://github.com/ilkor4/dinamo
-- `Деплой:` https://dinamo-grozny.ru
+- `Деплой:` https://ilkor4.github.io/dinamo/
 - `Над проектом работал:` https://github.com/ilkor4
